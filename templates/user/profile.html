@@ -7,31 +7,31 @@
     <div class="col-md-8">
         <div class="card">
             <div class="card-header bg-info text-white">
-                Customer Detail Page
+                Detalles de Perfil
             </div>
             <div class="row p-3">
                 <div class="col-md-8">
                     <table class="table table-borderless">
                         <thead>
-                            <span class="h4">Porfile Information</span class="h4">
+                            <span class="h4">Informacion del Perfil</span class="h4">
                             <a class="btn btn-info btn-sm float-right" href="{% url 'user-profile-update' %}">Edit</a>
                             <hr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">Name</th>
+                                <th scope="row">Usuario</th>
                                 <td>{{ user.username }}</td>
                             </tr>
                             <tr>
-                                <th scope="row">Email</th>
+                                <th scope="row">Correo</th>
                                 <td>{{ user.email }}</td>
                             </tr>
                             <tr>
-                                <th scope="row">Phone</th>
+                                <th scope="row">Telefono</th>
                                 <td>{{ user.profile.phone }}</td>
                             </tr>
                             <tr>
-                                <th scope="row">Address</th>
+                                <th scope="row">Direccion</th>
                                 <td>{{ user.profile.address }}</td>
                             </tr>
                         </tbody>
